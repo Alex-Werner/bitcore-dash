@@ -1,4 +1,4 @@
-Bitcore-Dash
+Bitcore-Dash Testnet Release
 =======
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore-dash.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-dash)
@@ -12,14 +12,23 @@ Infrastructure to build Dash and blockchain-based applications for the next gene
 
 Before you begin you'll need to have Node.js v4 or v0.12 installed. There are several options for installation. One method is to use [nvm](https://github.com/creationix/nvm) to easily switch between different versions, or download directly from [Node.js](https://nodejs.org/).
 
+First make sure to have already installed basic build prerequisites and libzmq3-dev.
+
 ```bash
-npm install -g bitcore-dash
+sudo apt-get install build-essential libzmq3-dev
+```
+
+Download this branch from github and install it globally:
+
+```bash
+git clone https://github.com/dashpay/bitcore-dash -b dev-testnet
+cd bitcore-dash
+npm install -g
 ```
 
 Spin up a full node and join the network:
 
 ```bash
-npm install -g bitcore-dash
 bitcored
 ```
 
